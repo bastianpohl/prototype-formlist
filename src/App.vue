@@ -1,16 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <container>
+    <div class="grid justify-items-center">
+      <img alt="Vue logo" src="./assets/logo.png" />
+    </div>
+    <prototype-list />
+  </container>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import PrototypeList from "./components/PrototypeList.vue";
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
 
 <style>
+body {
+  background-color: #f8f8f8;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
